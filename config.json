@@ -1,0 +1,48 @@
+{
+  "_comment": "★このファイルだけ編集すればOKです。keywords=追いかけたいクラブ・選手名 / regions=絞り込みたい地域名",
+
+  "keywords": [
+    "浦和レッズ",
+    "大宮アルディージャ",
+    "FC東京"
+  ],
+
+  "regions": [
+    "東京", "埼玉", "さいたま", "神奈川", "横浜", "千葉",
+    "茨城", "栃木", "群馬", "関東"
+  ],
+
+  "event_words": [
+    "サイン会", "公開練習", "ファンサ", "トークショー",
+    "握手会", "お渡し会", "交流会", "ファン感謝", "イベント"
+  ],
+
+  "exclude_domains": [
+    "mercari.com",
+    "jp.mercari.com",
+    "auctions.yahoo.co.jp",
+    "paypayfleamarket.yahoo.co.jp",
+    "shopping.yahoo.co.jp",
+    "fril.jp",
+    "rakuma.rakuten.co.jp",
+    "item.rakuten.co.jp",
+    "search.rakuten.co.jp",
+    "amazon.co.jp",
+    "ebay.com",
+    "aucfan.com",
+    "snkrdunk.com",
+    "magi.camp",
+    "otamart.com",
+    "suruga-ya.jp",
+    "bookoff.co.jp",
+    "2ndstreet.jp"
+  ],
+
+  "exclude_words": [
+    "落札", "出品中", "即決価格", "送料無料", "買取", "転売"
+  ],
+
+  "retention_days": 60,
+  "max_results_per_query": 20,
+  "site_title": "サッカーイベント ウォッチャー"
+}
