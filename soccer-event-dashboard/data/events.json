@@ -1,0 +1,29 @@
+[
+ {
+  "url": "https://www.urawa-reds.co.jp/news/1",
+  "title": "浦和レッズ 選手サイン会を埼玉スタジアムで開催",
+  "snippet": "7月26日、埼玉スタジアム2002にてトップチーム選手によるサイン会を実施します。",
+  "keyword": "浦和レッズ",
+  "source": "GoogleニュースRSS",
+  "published": "2026-07-16T10:00:00+09:00",
+  "first_seen": "2026-07-17T07:00:00+09:00"
+ },
+ {
+  "url": "https://news.example.jp/fc-tokyo",
+  "title": "FC東京、小平で公開練習&ファンサービスデー",
+  "snippet": "東京・小平グラウンドで公開練習を実施。練習後にはサイン対応も予定。",
+  "keyword": "FC東京",
+  "source": "GoogleニュースRSS",
+  "published": null,
+  "first_seen": "2026-07-16T07:00:00+09:00"
+ },
+ {
+  "url": "https://omiya.example.jp/talk",
+  "title": "大宮アルディージャOBトークショー in 大宮",
+  "snippet": "さいたま市大宮区でOB選手によるトークショーとお渡し会を開催。",
+  "keyword": "大宮アルディージャ",
+  "source": "Google検索",
+  "published": null,
+  "first_seen": "2026-07-15T07:00:00+09:00"
+ }
+]
