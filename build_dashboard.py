@@ -51,7 +51,22 @@ GOOGLE_CSE_ID = os.environ.get("GOOGLE_CSE_ID", "").strip()
 
 def load_config() -> dict:
     with open(CONFIG_PATH, encoding="utf-8") as f:
-        return json.load(f)
+        cfg = json.load(f)
+
+    # --- 選択式(チェックボックス形式)の設定を展開 ---
+    # club_selection / event_word_selection の中で true のものだけを採用する。
+    # 旧形式(keywords / event_words のリスト直書き)もそのまま動く後方互換つき。
+    if isinstance(cfg.get("club_selection"), dict):
+        cfg["keywords"] = [name for name, on in cfg["club_selection"].items() if on]
+    if isinstance(cfg.get("event_word_selection"), dict):
+        cfg["event_words"] = [w for w, on in cfg["event_word_selection"].items() if on]
+
+    if not cfg.get("keywords"):
+        sys.exit("ERROR: クラブが1つも選択されていません。config.json の club_selection で true のクラブを設定してください。")
+    if not cfg.get("event_words"):
+        sys.exit("ERROR: イベント語が1つも選択されていません。config.json の event_word_selection を確認してください。")
+
+    return cfg
 
 
 def load_stored_events() -> dict:
