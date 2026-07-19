@@ -1,20 +1,93 @@
 {
-  "_comment": "★このファイルだけ編集すればOKです。keywords=追いかけたいクラブ・選手名 / regions=絞り込みたい地域名",
+  "_使い方": "★情報を集めたいクラブを true に、不要なクラブを false にするだけです。自由入力は不要です。",
 
-  "keywords": [
-    "浦和レッズ",
-    "大宮アルディージャ",
-    "FC東京"
-  ],
+  "_クラブ選択_J1": "―――――― J1リーグ(2026) ――――――",
+  "club_selection": {
+    "鹿島アントラーズ": false,
+    "水戸ホーリーホック": false,
+    "浦和レッズ": true,
+    "ジェフユナイテッド千葉": false,
+    "柏レイソル": false,
+    "FC東京": true,
+    "東京ヴェルディ": false,
+    "FC町田ゼルビア": false,
+    "川崎フロンターレ": false,
+    "横浜F・マリノス": false,
+    "清水エスパルス": false,
+    "名古屋グランパス": false,
+    "京都サンガF.C.": false,
+    "ガンバ大阪": false,
+    "セレッソ大阪": false,
+    "ヴィッセル神戸": false,
+    "ファジアーノ岡山": false,
+    "サンフレッチェ広島": false,
+    "アビスパ福岡": false,
+    "V・ファーレン長崎": false,
+
+    "北海道コンサドーレ札幌": false,
+    "ヴァンラーレ八戸": false,
+    "ベガルタ仙台": false,
+    "ブラウブリッツ秋田": false,
+    "モンテディオ山形": false,
+    "いわきFC": false,
+    "栃木シティ": false,
+    "RB大宮アルディージャ": true,
+    "横浜FC": false,
+    "湘南ベルマーレ": false,
+    "ヴァンフォーレ甲府": false,
+    "アルビレックス新潟": false,
+    "カターレ富山": false,
+    "ジュビロ磐田": false,
+    "藤枝MYFC": false,
+    "徳島ヴォルティス": false,
+    "FC今治": false,
+    "サガン鳥栖": false,
+    "大分トリニータ": false,
+    "テゲバジャーロ宮崎": false,
+
+    "福島ユナイテッドFC": false,
+    "栃木SC": false,
+    "ザスパ群馬": false,
+    "SC相模原": false,
+    "松本山雅FC": false,
+    "AC長野パルセイロ": false,
+    "ツエーゲン金沢": false,
+    "FC岐阜": false,
+    "レイラック滋賀FC": false,
+    "FC大阪": false,
+    "奈良クラブ": false,
+    "ガイナーレ鳥取": false,
+    "レノファ山口FC": false,
+    "カマタマーレ讃岐": false,
+    "愛媛FC": false,
+    "高知ユナイテッドSC": false,
+    "ギラヴァンツ北九州": false,
+    "ロアッソ熊本": false,
+    "鹿児島ユナイテッドFC": false,
+    "FC琉球": false
+  },
+
+  "_キーワード選択": "★検索に使うイベント語も true / false で選択します。",
+  "event_word_selection": {
+    "サイン会": true,
+    "公開練習": true,
+    "ファンサ": true,
+    "トークショー": true,
+    "握手会": true,
+    "お渡し会": true,
+    "交流会": true,
+    "ファン感謝": true,
+    "イベント": true,
+    "ファンミーティング": false,
+    "サイン対応": false,
+    "撮影会": false,
+    "出陣式": false,
+    "優勝報告会": false
+  },
 
   "regions": [
     "東京", "埼玉", "さいたま", "神奈川", "横浜", "千葉",
     "茨城", "栃木", "群馬", "関東"
-  ],
-
-  "event_words": [
-    "サイン会", "公開練習", "ファンサ", "トークショー",
-    "握手会", "お渡し会", "交流会", "ファン感謝", "イベント"
   ],
 
   "exclude_domains": [
@@ -42,7 +115,9 @@
     "落札", "出品中", "即決価格", "送料無料", "買取", "転売"
   ],
 
-  "retention_days": 60,
+  "_保持日数": "★この日数より古い情報は毎日の実行時に自動削除されます(容量削減)。",
+  "retention_days": 3,
+
   "max_results_per_query": 20,
   "site_title": "サッカーイベント ウォッチャー"
 }
